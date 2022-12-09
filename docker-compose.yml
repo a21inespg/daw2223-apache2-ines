@@ -7,6 +7,6 @@ services:
       - 443:443
     volumes:
       - .startwars:/app/startwars
-      - ./stratrek;/app/stratrek
+      - ./startrek:/app/startrek
       - ./apache/startrek.conf:/etc/apache2/sites-enabled/startrek.conf
       - ./apache/starwars.conf:/etc/apache2/sites-enabled/starwars.conf
