@@ -10,4 +10,3 @@ EXPOSE 443
 WORKDIR /app
 
 CMD apachectl -D FOREGROUND
-
