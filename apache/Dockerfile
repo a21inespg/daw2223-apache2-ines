@@ -1,6 +1,6 @@
 FROM debian
 
-RUN apt update && apt instal -y apache2 php libapache2-mod-php
+RUN apt update && apt install -y apache2 php libapache2-mod-php
 
 RUN a2enmod ssl
 
