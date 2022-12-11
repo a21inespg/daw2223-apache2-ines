@@ -4,10 +4,13 @@ services:
     build: apache
     ports:
       - 80:80
-      - 8443:443
+      - 443:443
     volumes:
       - ./starwars:/app/starwars
       - ./startrek:/app/startrek
       - ./palpatine:/app/palpatine
       - ./apache/startrek.conf:/etc/apache2/sites-enabled/startrek.conf
       - ./apache/starwars.conf:/etc/apache2/sites-enabled/starwars.conf
+      - ./apache/starwars-ssl.conf:/etc/apache2/sites-enabled/starwars-ssl.conf
+      - ./apache/server.pem:/etc/ssl/certs/server.pem
+      - ./apache/server.key:/etc/ssl/private/server.key
